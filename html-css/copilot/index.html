@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory - Corporate Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="sidebar-toggle" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-logo">
+                    <h2>CorporateCorp</h2>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link active">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#login" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Portal Navigation</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active">
+                    <a href="#dashboard" class="sidebar-link">
+                        <span class="icon">📊</span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#directory" class="sidebar-link">
+                        <span class="icon">👥</span>
+                        Employee Directory
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#departments" class="sidebar-link">
+                        <span class="icon">🏢</span>
+                        Departments
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#resources" class="sidebar-link">
+                        <span class="icon">📚</span>
+                        Resources
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#reports" class="sidebar-link">
+                        <span class="icon">📈</span>
+                        Reports
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#settings" class="sidebar-link">
+                        <span class="icon">⚙️</span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <header class="content-header">
+                <div class="breadcrumb">
+                    <span>Home</span> / <span>Team</span> / <span class="current">Employee Directory</span>
+                </div>
+                <h1>Employee Directory</h1>
+                <p class="subtitle">Professional profiles of our team members</p>
+            </header>
+
+            <section class="grid-container">
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=SJ" alt="Profile of Sarah Johnson">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sarah Johnson</h3>
+                        <p class="title">Senior Software Engineer</p>
+                        <p class="department">Engineering Department</p>
+                        <p class="email">sarah.johnson@corporatecorp.com</p>
+                        <p class="summary">Lead developer with expertise in full-stack development and team leadership. Specializes in scalable architecture and agile methodologies.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=MC" alt="Profile of Michael Chen">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Michael Chen</h3>
+                        <p class="title">UX/UI Design Lead</p>
+                        <p class="department">Design Department</p>
+                        <p class="email">michael.chen@corporatecorp.com</p>
+                        <p class="summary">Creative professional specializing in user experience design and design systems. Expert in accessibility and user research.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=ER" alt="Profile of Emily Rodriguez">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="title">Senior Data Scientist</p>
+                        <p class="department">Analytics Department</p>
+                        <p class="email">emily.rodriguez@corporatecorp.com</p>
+                        <p class="summary">Data science professional with advanced expertise in machine learning and predictive analytics. PhD in Computer Science.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=DT" alt="Profile of David Thompson">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>David Thompson</h3>
+                        <p class="title">DevOps Engineer</p>
+                        <p class="department">Infrastructure Department</p>
+                        <p class="email">david.thompson@corporatecorp.com</p>
+                        <p class="summary">Infrastructure specialist with expertise in cloud platforms and automation. Certified in AWS and Kubernetes.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=LP" alt="Profile of Lisa Park">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lisa Park</h3>
+                        <p class="title">Product Manager</p>
+                        <p class="department">Product Department</p>
+                        <p class="email">lisa.park@corporatecorp.com</p>
+                        <p class="summary">Strategic product leader with proven track record in digital product development and agile team management.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=JW" alt="Profile of James Wilson">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>James Wilson</h3>
+                        <p class="title">Security Specialist</p>
+                        <p class="department">Security Department</p>
+                        <p class="email">james.wilson@corporatecorp.com</p>
+                        <p class="summary">Cybersecurity expert ensuring organizational security and compliance. Certified in multiple security frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=MG" alt="Profile of Maria Garcia">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maria Garcia</h3>
+                        <p class="title">Marketing Director</p>
+                        <p class="department">Marketing Department</p>
+                        <p class="email">maria.garcia@corporatecorp.com</p>
+                        <p class="summary">Marketing executive with extensive experience in digital marketing strategies and brand development.</p>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/120x120/1e3a8a/white?text=RK" alt="Profile of Robert Kim">
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Robert Kim</h3>
+                        <p class="title">Backend Developer</p>
+                        <p class="department">Engineering Department</p>
+                        <p class="email">robert.kim@corporatecorp.com</p>
+                        <p class="summary">Backend development specialist focusing on microservices architecture and scalable API design.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="corporate-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 CorporateCorp. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContainer = document.querySelector('.main-container');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Sidebar toggle for mobile
+        function toggleSidebar() {
+            sidebar.classList.toggle('active');
+            mainContainer.classList.toggle('sidebar-active');
+        }
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 1024 && 
+                !sidebar.contains(e.target) && 
+                !e.target.classList.contains('sidebar-toggle')) {
+                sidebar.classList.remove('active');
+                mainContainer.classList.remove('sidebar-active');
+            }
+        });
+    </script>
+</body>
+</html>
