@@ -1,0 +1,70 @@
+/* Custom CSS to complement Bootstrap */
+
+/* Body padding for fixed navbar */
+body {
+    padding-top: 56px;
+}
+
+/* Main content area */
+.main-content {
+    min-height: calc(100vh - 56px);
+}
+
+/* Sidebar on desktop - always visible */
+@media (min-width: 992px) {
+    .offcanvas-lg {
+        position: fixed !important;
+        top: 56px;
+        left: 0;
+        width: 250px;
+        height: calc(100vh - 56px);
+        visibility: visible !important;
+        transform: none !important;
+    }
+    
+    .main-content {
+        margin-left: 250px !important;
+    }
+}
+
+/* Sidebar hover effects */
+.hover-bg-secondary:hover {
+    background-color: #495057 !important;
+}
+
+/* Employee card enhancements */
+.employee-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.employee-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Profile image sizing */
+.employee-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Custom badge styling */
+.badge.bg-success {
+    font-size: 0.7rem;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer adjustments for sidebar layout */
+@media (min-width: 992px) {
+    footer .container-fluid .row .col-lg-10 {
+        margin-left: auto;
+        padding-left: 250px;
+    }
+}

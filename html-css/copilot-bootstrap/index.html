@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory - Corporate Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <!-- Sidebar Toggle Button -->
+            <button class="btn btn-outline-light me-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                <i class="bi bi-list"></i>
+            </button>
+            
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">CorporateCorp</a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-primary ms-2 px-3" href="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Offcanvas -->
+            <div class="offcanvas-lg offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title text-light" id="sidebarLabel">Portal Navigation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <nav class="navbar-nav flex-column">
+                        <a class="nav-link active bg-primary text-white px-3 py-3 border-bottom border-secondary" href="#dashboard">
+                            <i class="bi bi-speedometer2 me-2"></i>
+                            Dashboard
+                        </a>
+                        <a class="nav-link text-light px-3 py-3 border-bottom border-secondary hover-bg-secondary" href="#directory">
+                            <i class="bi bi-people me-2"></i>
+                            Employee Directory
+                        </a>
+                        <a class="nav-link text-light px-3 py-3 border-bottom border-secondary hover-bg-secondary" href="#departments">
+                            <i class="bi bi-building me-2"></i>
+                            Departments
+                        </a>
+                        <a class="nav-link text-light px-3 py-3 border-bottom border-secondary hover-bg-secondary" href="#resources">
+                            <i class="bi bi-book me-2"></i>
+                            Resources
+                        </a>
+                        <a class="nav-link text-light px-3 py-3 border-bottom border-secondary hover-bg-secondary" href="#reports">
+                            <i class="bi bi-graph-up me-2"></i>
+                            Reports
+                        </a>
+                        <a class="nav-link text-light px-3 py-3 hover-bg-secondary" href="#settings">
+                            <i class="bi bi-gear me-2"></i>
+                            Settings
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="col-lg-10 ms-lg-auto px-md-4 main-content">
+                <!-- Content Header -->
+                <div class="pt-3 pb-2 mb-3 border-bottom">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Team</a></li>
+                            <li class="breadcrumb-item active text-primary fw-semibold" aria-current="page">Employee Directory</li>
+                        </ol>
+                    </nav>
+                    <h1 class="h2 fw-bold text-dark">Employee Directory</h1>
+                    <p class="text-muted">Professional profiles of our team members</p>
+                </div>
+
+                <!-- Employee Cards Grid -->
+                <div class="row g-4 mb-5">
+                    <!-- Employee Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=SJ" alt="Profile of Sarah Johnson" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Sarah Johnson</h5>
+                                <p class="text-primary fw-semibold mb-1">Senior Software Engineer</p>
+                                <p class="text-muted small mb-3">Engineering Department</p>
+                                <p class="text-info small mb-3">sarah.johnson@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Lead developer with expertise in full-stack development and team leadership. Specializes in scalable architecture and agile methodologies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=MC" alt="Profile of Michael Chen" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Michael Chen</h5>
+                                <p class="text-primary fw-semibold mb-1">UX/UI Design Lead</p>
+                                <p class="text-muted small mb-3">Design Department</p>
+                                <p class="text-info small mb-3">michael.chen@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Creative professional specializing in user experience design and design systems. Expert in accessibility and user research.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=ER" alt="Profile of Emily Rodriguez" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Emily Rodriguez</h5>
+                                <p class="text-primary fw-semibold mb-1">Senior Data Scientist</p>
+                                <p class="text-muted small mb-3">Analytics Department</p>
+                                <p class="text-info small mb-3">emily.rodriguez@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Data science professional with advanced expertise in machine learning and predictive analytics. PhD in Computer Science.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Employee Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=DT" alt="Profile of David Thompson" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">David Thompson</h5>
+                                <p class="text-primary fw-semibold mb-1">DevOps Engineer</p>
+                                <p class="text-muted small mb-3">Infrastructure Department</p>
+                                <p class="text-info small mb-3">david.thompson@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Infrastructure specialist with expertise in cloud platforms and automation. Certified in AWS and Kubernetes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=LP" alt="Profile of Lisa Park" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Lisa Park</h5>
+                                <p class="text-primary fw-semibold mb-1">Product Manager</p>
+                                <p class="text-muted small mb-3">Product Department</p>
+                                <p class="text-info small mb-3">lisa.park@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Strategic product leader with proven track record in digital product development and agile team management.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=JW" alt="Profile of James Wilson" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">James Wilson</h5>
+                                <p class="text-primary fw-semibold mb-1">Security Specialist</p>
+                                <p class="text-muted small mb-3">Security Department</p>
+                                <p class="text-info small mb-3">james.wilson@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Cybersecurity expert ensuring organizational security and compliance. Certified in multiple security frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Employee Card 7 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=MG" alt="Profile of Maria Garcia" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Maria Garcia</h5>
+                                <p class="text-primary fw-semibold mb-1">Marketing Director</p>
+                                <p class="text-muted small mb-3">Marketing Department</p>
+                                <p class="text-info small mb-3">maria.garcia@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Marketing executive with extensive experience in digital marketing strategies and brand development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Card 8 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 employee-card">
+                            <div class="card-header bg-light text-center position-relative border-0 py-4">
+                                <img src="https://via.placeholder.com/80x80/0d6efd/white?text=RK" alt="Profile of Robert Kim" class="rounded-circle border border-3 border-primary">
+                                <span class="position-absolute top-0 end-0 mt-3 me-3">
+                                    <span class="badge bg-success rounded-pill">Active</span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-dark mb-1">Robert Kim</h5>
+                                <p class="text-primary fw-semibold mb-1">Backend Developer</p>
+                                <p class="text-muted small mb-3">Engineering Department</p>
+                                <p class="text-info small mb-3">robert.kim@corporatecorp.com</p>
+                                <p class="card-text text-muted small">Backend development specialist focusing on microservices architecture and scalable API design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 ms-lg-auto">
+                    <div class="text-center">
+                        <p class="mb-0">&copy; 2026 CorporateCorp. All rights reserved. | 
+                            <a href="#" class="text-light text-decoration-none">Privacy Policy</a> | 
+                            <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
