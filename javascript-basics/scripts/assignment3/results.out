@@ -1,0 +1,74 @@
+Qualified CS students: [ 'Carol', 'Eve' ]
+=== Q2 OUTPUT ===
+Pipeline result: 27
+Expected squares: [ 9, 16, 25, 36, 49 ]
+=== Q3 OUTPUT ===
+Analysis result: {
+  evens: [ 12, 8, -2, 4, 10 ],
+  odds: [ -5, 3, 15, 7, -1 ],
+  sum: 51,
+  hasNegative: true,
+  allPositive: false,
+  doubled: [
+    24, -10, 16,  6, -4,
+    30,   8, 14, -2, 20
+  ]
+}
+Even numbers: [ 12, 8, -2, 4, 10 ]
+Odd numbers: [ -5, 3, 15, 7, -1 ]
+Sum: 51
+Has negative: true
+All positive: false
+Doubled: [
+  24, -10, 16,  6, -4,
+  30,   8, 14, -2, 20
+]
+=== Q4 OUTPUT ===
+Low stock (below 25): { oranges: 20, strawberries: 15 }
+Stock increased by 20%: { apples: 60, bananas: 36, oranges: 24, grapes: 54, strawberries: 18 }
+Top 3 items: { apples: 50, grapes: 45, bananas: 30 }
+=== Q5 OUTPUT ===
+Object analysis: {
+  stringProps: [ 'name', 'city', 'email' ],
+  numberProps: [ 'age', 'score', 'grade', 'count' ],
+  totalStringLength: 28,
+  numberSum: 165.8
+}
+String properties: [ 'name', 'city', 'email' ]
+Number properties: [ 'age', 'score', 'grade', 'count' ]
+Total string length: 28
+Number sum: 165.8
+=== Q6 OUTPUT ===
+Is 4 even? true
+Is 7 even? false
+Full name: John Smith
+Area of 5x3: 15
+Area of -2x4: 0
+Process numbers result: 50
+Expected positive squares sum: 50
+=== Q7 OUTPUT ===
+Is 5 positive? true
+Is -3 positive? false
+Doubled array: [ 2, 4, 6 ]
+People sorted by age: [
+  { name: 'Bob', age: 25 },
+  { name: 'Alice', age: 30 },
+  { name: 'Charlie', age: 35 }
+]
+=== Q8 OUTPUT ===
+Initial counter value: 10
+Initial tracker value: 5
+Final counter value: 25
+Final tracker value: 15
+Bound getTrackerValue result: 15
+=== Q9 OUTPUT ===
+Total revenue: 3650
+Customer stats: {
+  John: { totalSpent: 1350, orderCount: 2 },
+  Jane: { totalSpent: 800, orderCount: 1 },
+  Bob: { totalSpent: 1500, orderCount: 1 }
+}
+Premium customer orders: [ 'John', 'Bob' ]
+Most popular items: [ 'laptop', 'mouse', 'phone', 'case', 'keyboard', 'monitor' ]
+John's info: { email: 'john@email.com', tier: 'premium' }
+Jane's info: { email: 'jane@email.com', tier: 'standard' }
