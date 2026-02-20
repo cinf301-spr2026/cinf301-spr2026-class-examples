@@ -1,9 +1,28 @@
-<script>
-  /* See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify */
-  window.localStorage.setItem('name', 'Dan');
-  window.localStorage.setItem('age', 'Ancient');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Example 1</title>
+</head>
+<body>
+    <h1>LocalStorage Example</h1>
+    <p>Open the browser's developer tools and check the Application/Storage tab to see the localStorage entries.</p>
+    
+    <script>
+        /* See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify */
+        window.localStorage.setItem('name', 'Dan');
+        window.localStorage.setItem('age', 'Ancient');
 
-  const values = { height: '6ft', 'weight': 180 };
-  const vals = JSON.stringify(values);
-  window.localStorage.setItem('str', vals);
-</script>
+        const values = { height: '6ft', weight: 180 };
+        const vals = JSON.stringify(values);
+        window.localStorage.setItem('str', vals);
+        
+        // Optional: Display what was stored
+        console.log('Stored in localStorage:');
+        console.log('name:', localStorage.getItem('name'));
+        console.log('age:', localStorage.getItem('age'));
+        console.log('str:', localStorage.getItem('str'));
+    </script>
+</body>
+</html>
