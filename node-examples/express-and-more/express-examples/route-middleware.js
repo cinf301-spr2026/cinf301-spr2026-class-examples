@@ -67,6 +67,21 @@ function andRestrictTo(role) {
   }
 }
 
+function andRestrictToAdminOrSelf(req, res, next) {
+  // Allow access if user is admin OR if user is acting on themselves
+  var isAdmin = req.authenticatedUser.role === 'admin';
+  var isSelf = req.authenticatedUser.id === req.user.id;
+  
+  console.log("In andRestrictToAdminOrSelf: auth_role = " + req.authenticatedUser.role + 
+              ", auth_id = " + req.authenticatedUser.id + ", target_id = " + req.user.id);
+  
+  if (isAdmin || isSelf) {
+    next();
+  } else {
+    next(new Error('Unauthorized'));
+  }
+}
+
 // Middleware for faux authentication
 // you would of course implement something real,
 // but this illustrates how an authenticated user
@@ -90,7 +105,7 @@ app.get('/user/:id/edit', loadUser, andRestrictToSelf, function (req, res) {
   res.send('Editing user ' + req.user.name);
 });
 
-app.delete('/user/:id', loadUser, andRestrictTo('admin'), function (req, res) {
+app.delete('/user/:id', loadUser, andRestrictToAdminOrSelf, function (req, res) {
   res.send('Deleted user ' + req.user.name);
 });
 
