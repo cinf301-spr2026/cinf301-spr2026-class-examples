@@ -32,11 +32,6 @@ Work through these files in order, asking for explanations as needed:
 5. `promiseCats.js` - Real-world Promise example
 6. `asyncAwaitCats.js` - Modern async/await syntax
 
-## Additional Examples
-
-- `callbackCatsHell.js` - Demonstrates callback hell (8 levels deep)
-- `callbackCatsHellFixed.js` - Same functionality using modern async/await
-
 ## External Resources
 
 ### Comprehensive Guides
