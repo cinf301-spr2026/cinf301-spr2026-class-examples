@@ -26,11 +26,10 @@ These examples show the evolution of asynchronous programming in JavaScript:
 Work through these files in order, asking for explanations as needed:
 
 1. `callbackCats.js` - Traditional callback approach
-2. `promises1.js` - Basic Promise creation
-3. `promises2.js` - Promise chaining patterns  
-4. `promisesChained.js` - Advanced Promise chains
-5. `promiseCats.js` - Real-world Promise example
-6. `asyncAwaitCats.js` - Modern async/await syntax
+2. `promisesInitial.js` - Basic Promise creation
+3. `promisesChained.js` - Advanced Promise chains
+4. `promiseCats.js` - Real-world Promise example
+5. `asyncAwaitCats.js` - Modern async/await syntax
 
 ## External Resources
 
