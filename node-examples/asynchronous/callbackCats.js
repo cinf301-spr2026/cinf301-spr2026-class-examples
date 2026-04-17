@@ -17,7 +17,13 @@ request('https://catfact.ninja/breeds', (error, response, body) => {
     }
 
     console.log('Processing our list of cat breeds');
-    cats = JSON.parse(body)['data'];
+    let cats;
+    try {
+        cats = JSON.parse(body).data;
+    } catch (error) {
+        console.error(`Could not parse the API response: ${error.message}`);
+        return;
+    }
 
     let catList = '';
     cats.forEach(cat => {
@@ -30,6 +36,6 @@ request('https://catfact.ninja/breeds', (error, response, body) => {
             return;
         }
 
-        console.log('Saved our list of cats to callbackCats.csv');;
+        console.log('Saved our list of cats to callbackCats.csv');
     });
 });

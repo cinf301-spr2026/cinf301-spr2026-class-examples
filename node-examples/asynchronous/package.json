@@ -4,6 +4,7 @@
   "description": "See this link for a good writeup on asynchronous Javascript and Promises https://www.digitalocean.com/community/tutorials/how-to-write-asynchronous-code-in-node-js",
   "main": "asyncAwaitCats.js",
   "scripts": {
+    "start": "node asyncAwaitCats.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
