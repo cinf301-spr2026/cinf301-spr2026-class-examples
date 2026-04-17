@@ -29,7 +29,7 @@ exports.create = (req, res) => {
 
 // Retrieve and return all notes from the database.
 exports.findAll = (req, res) => {
-    Note.find()
+    Note.find({ email: req.user })
         .then(notes => {
             res.send(notes);
         }).catch(err => {
@@ -77,7 +77,10 @@ exports.update = (req, res) => {
     }
 
     // Find note and update it with the request body
-    Note.findByIdAndUpdate(req.params.noteId, {
+    Note.findOneAndUpdate({
+        _id: req.params.noteId,
+        email: req.user
+    }, {
         title: req.body.title || "Untitled Note",
         content: req.body.content
     }, { new: true })
@@ -102,7 +105,10 @@ exports.update = (req, res) => {
 
 // Delete a note with the specified noteId in the request
 exports.delete = (req, res) => {
-    Note.findByIdAndRemove(req.params.noteId)
+    Note.findOneAndDelete({
+        _id: req.params.noteId,
+        email: req.user
+    })
         .then(note => {
             if (!note) {
                 return res.status(404).send({
